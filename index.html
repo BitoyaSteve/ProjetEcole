@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Scolaire - Application Monopage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gestion Scolaire</h1>
+    </header>
+
+    <nav>
+        <ul class="main-nav">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#pre_inscription">Pré-Inscription</a></li>
+            <li><a href="#notification">Notification</a></li>
+            <li><a href="#infos">Infos</a></li>
+        </ul>
+    </nav>
+
+    <main class="content-container">
+        
+        <section id="accueil">
+            <h2>Bienvenue sur la Gestion Scolaire !</h2>
+            <p>Découvrez notre plateforme unifiée. Notre mission est de simplifier l'administration scolaire pour tous. Utilisez les liens ci-dessus pour naviguer.</p>
+            <article>
+                <h3>Actualités Récentes</h3>
+                <p>Les inscriptions pour la prochaine rentrée sont ouvertes. Cliquez sur "Pré-Inscription" pour commencer.</p>
+            </article>
+        </section>
+
+        <section id="pre_inscription">
+            <h2>Formulaire de Pré-Inscription</h2>
+            <form action="#" method="POST" class="inscription-form">
+                <div class="Groupes">
+                    
+                    <label for="nomEleve">Nom de l'élève</label>
+                    <input type="text" name="Nom_Eleve" placeholder="Nom de l'élève" required>
+                
+                    <label for="prenomEleve">Prénom de l'élève</label>
+                    <input type="text" name="Prenom_Eleve" placeholder="Prénom de l'élève" required>
+
+                    <label for="dateNaissance">Date de Naissance</label>
+                    <input type="date" name="Date_de_Naissance" required>
+
+                    <label for="lieuNaissance">Lieu de Naissance</label>
+                    <input type="text" name="Lieu" placeholder="Lieu de Naissance" required>
+
+                    <label for="telephone">Téléphone</label>
+                    <input type="tel" name="Telephone" placeholder="Téléphone (ex: 0123456789)" pattern="[0-9]{10}" required>
+                    
+                    <button type="submit">S'inscrire</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="notification">
+            <h2>Notifications</h2>
+            <p>Consultez les dernières communications importantes.</p>
+            <ul>
+                <li>Alerte : Maintenance du système le 25/11 à 22h.</li>
+                <li>Rappel : Réunion des parents d'élèves le 05/12.</li>
+            </ul>
+        </section>
+
+        <section id="infos">
+            <h2>Informations Utiles</h2>
+            <p>Contactez-nous ou trouvez les documents essentiels.</p>
+            <ul>
+                <li>**Téléphone :** 01 23 45 67 89</li>
+                <li>**Email :** contact@ecole.com</li>
+                <li>**Adresse :** 10 Rue de l'Éducation, Ville</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gestion Scolaire</p>
+    </footer>
+
+</body>
+</html>

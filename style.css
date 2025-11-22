@@ -1,0 +1,148 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f9; 
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #004d99; 
+}
+
+
+header {
+    background-color: #007bff; 
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: white; 
+}
+
+
+nav {
+    background-color: #0056b3; 
+}
+
+.main-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+}
+
+.main-nav li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.main-nav li a:hover {
+    background-color: #004085;
+}
+
+.main-nav li a:focus,
+.main-nav li a:active,
+.main-nav li a[href]:focus,
+.main-nav li a[href]:active {
+    
+    background-color: #004085;
+    color: #c0e7ff; 
+}
+
+
+
+.content-container section {
+    display: none;
+    padding: 30px;
+    background-color: white;
+    margin: 30px auto;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.content-container section:target {
+    display: block;
+}
+
+.content-container section:first-child:not(:target) {
+    display: block;
+}
+
+.content-container section h2 {
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+.Groupes {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; 
+}
+
+.Groupes label {
+    font-weight: bold;
+    color: #444;
+    margin-top: 5px;
+}
+
+.Groupes input[type="text"],
+.Groupes input[type="date"],
+.Groupes input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; 
+    transition: border-color 0.3s;
+}
+
+.Groupes input:focus {
+    border-color: #28a745; 
+    outline: none;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.3);
+}
+
+.Groupes button {
+    background-color: #28a745; 
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 25px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.Groupes button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #e9ecef;
+    color: #6c757d;
+    border-top: 1px solid #dee2e6;
+    margin-top: 50px;
+}
+
